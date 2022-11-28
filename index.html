@@ -14,8 +14,7 @@
   </head>
 
   <body class="main-font bg-[#141519] flex flex-col justify-evenly items-center h-screen">
-
-    <main x-data="{ activeSelection: '', submitted: false }" class="bg-[#1E252F] w-[30px] p-6 rounded-xl">
+    <main x-data="{ activeSelection: '', submitted: false }" class="bg-[#1E252F] w-[340px] p-6 rounded-xl">
       <div x-show="!submitted">
         <div class="bg-[#262F38] p-3 rounded-full w-10">
           <img src="images/icon-star.svg" alt="icon star">
@@ -61,7 +60,6 @@
           SUBMIT
         </button>
       </div>
-
       <div x-show="submitted" class="py-4 text-center">
         <img src="images/illustration-thank-you.svg" alt="thank you" class="mx-auto mb-2">
         <div class="bg-[#262F38] text-[#FC7613] text-sm inline-block rounded-full px-3 py-1.5 mt-5">You selected <span x-text="activeSelection"></span> out of 5</div>
@@ -69,10 +67,5 @@
         <p class="text-sm text-gray-500">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>  
       </div>
     </main>
-
-    <!-- <main class="bg-[#1E252F] rounded-xl text-center w-80 p-4 hidden">
-
-    </main> -->
-
   </body>
 </html>
